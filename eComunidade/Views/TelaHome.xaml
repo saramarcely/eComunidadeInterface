@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eComunidade.Views.TelaHome"
+             Title="Home">
+    <VerticalStackLayout Spacing="10" Padding="20" HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="Bem-vindo(a) à eComunidade!" FontSize="Title" />
+        <Label Text="Navegue pelo menu lateral para explorar." FontSize="Subtitle" />
+    </VerticalStackLayout>
+</ContentPage>
