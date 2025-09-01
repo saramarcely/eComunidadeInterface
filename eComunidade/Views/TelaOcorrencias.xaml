@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="eComunidade.Views.TelaRanking"
-             Title="Ranking"
+             x:Class="eComunidade.Views.TelaOcorrencias"
+             Title="Ocorrências"
              BackgroundColor="#EBF5FF">
     <VerticalStackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
-        <Label Text="Esta é a Tela de Ranking"
+        <Label Text="Esta é a Tela de Ocorrências"
                FontSize="24"
                HorizontalOptions="Center" />
     </VerticalStackLayout>
