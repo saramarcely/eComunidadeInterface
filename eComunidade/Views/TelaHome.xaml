@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:eComunidade.ViewModels"
              x:Class="eComunidade.Views.TelaHome"
-             BackgroundColor="#EBF5FF"
+             BackgroundColor="#DEF4FF"
              Title="Home">
 
     <ContentPage.BindingContext>
@@ -31,47 +31,47 @@
             </HorizontalStackLayout>
         </Grid>
 
-        <Label Grid.Row="1" Text="{Binding NomeUsuario}" FontSize="18" TextColor="#333333" Margin="20,10,20,25" />
+        <Label Grid.Row="1" Text="{Binding NomeUsuario}" FontSize="18" TextColor="#333333" Margin="20,10,20,40" />
 
-        <HorizontalStackLayout Grid.Row="2" HorizontalOptions="Center" Margin="20,0,20,30" Spacing="15">
+        <HorizontalStackLayout Grid.Row="2" HorizontalOptions="Center" Margin="90,10,20,40" Spacing="15">
             <VerticalStackLayout HorizontalOptions="Center" Spacing="5">
-                <Button BackgroundColor="White" Padding="15" HeightRequest="100" WidthRequest="100"
+                <Button BackgroundColor="White" Padding="15" HeightRequest="71" WidthRequest="91"
                         Command="{Binding NavigateToEventsCommand}" CornerRadius="15"
                         ImageSource="eventos.png">
                     <Button.Shadow>
-                        <Shadow Brush="Black" Offset="10,10" Radius="10" Opacity="0.3" />
+                        <Shadow Brush="Black" Offset="10,10" Radius="10" Opacity="0.1" />
                     </Button.Shadow>
                 </Button>
                 <Label Text="Eventos" HorizontalOptions="Center" FontSize="12" TextColor="#333333" />
             </VerticalStackLayout>
             <VerticalStackLayout HorizontalOptions="Center" Spacing="5">
-                <Button BackgroundColor="White" Padding="15" HeightRequest="100" WidthRequest="100"
+                <Button BackgroundColor="White" Padding="15" HeightRequest="71" WidthRequest="91"
                         Command="{Binding NavigateToOccurrencesCommand}" CornerRadius="15"
                         ImageSource="ocorrencias.png">
                     <Button.Shadow>
-                        <Shadow Brush="Black" Offset="10,10" Radius="10" Opacity="0.3" />
+                        <Shadow Brush="Black" Offset="10,10" Radius="10" Opacity="0.1" />
                     </Button.Shadow>
                 </Button>
                 <Label Text="Ocorrências" HorizontalOptions="Center" FontSize="12" TextColor="#333333" />
             </VerticalStackLayout>
             <VerticalStackLayout HorizontalOptions="Center" Spacing="5">
-                <Button BackgroundColor="White" Padding="15" HeightRequest="100" WidthRequest="100"
+                <Button BackgroundColor="White" Padding="15" HeightRequest="71" WidthRequest="91"
                         Command="{Binding NavigateToRankingCommand}" CornerRadius="15"
                         ImageSource="ranking.png">
                     <Button.Shadow>
-                        <Shadow Brush="Black" Offset="10,10" Radius="10" Opacity="0.3" />
+                        <Shadow Brush="Black" Offset="10,10" Radius="10" Opacity="0.1" />
                     </Button.Shadow>
                 </Button>
                 <Label Text="Ranking" HorizontalOptions="Center" FontSize="12" TextColor="#333333" />
             </VerticalStackLayout>
         </HorizontalStackLayout>
 
-        <Border Grid.Row="3" StrokeShape="RoundRectangle 20" BackgroundColor="White" Margin="20,0,20,20"
+        <Border Grid.Row="3" StrokeShape="RoundRectangle 20" BackgroundColor="White" Margin="40,40,40,13"
                 StrokeThickness="0" VerticalOptions="FillAndExpand">
             <Border.Shadow>
-                <Shadow Brush="Black" Offset="10,10" Radius="10" Opacity="0.3" />
+                <Shadow Brush="Black" Offset="10,10" Radius="10" Opacity="0.2" />
             </Border.Shadow>
-            <StackLayout VerticalOptions="End" HorizontalOptions="Center" Margin="0,0,0,10" Orientation="Horizontal" Spacing="5">
+            <StackLayout VerticalOptions="End" HorizontalOptions="Center" Margin="0,0,0,10" Orientation="Horizontal" Spacing="25">
                 <BoxView Color="#66A5ED" WidthRequest="25" HeightRequest="5" CornerRadius="3" />
                 <BoxView Color="#ADD8E6" WidthRequest="25" HeightRequest="5" CornerRadius="3" />
                 <BoxView Color="#ADD8E6" WidthRequest="25" HeightRequest="5" CornerRadius="3" />
@@ -80,14 +80,37 @@
             </StackLayout>
         </Border>
 
-        <Grid Grid.Row="4" ColumnDefinitions="*,*,*" Padding="0">
-            <Button Grid.Column="0" BackgroundColor="Transparent" BorderColor="Transparent" BorderWidth="0"
-                    Command="{Binding NavigateToHomeCommand}" ImageSource="home.png" HeightRequest="35" WidthRequest="35"/>
-            <Button Grid.Column="1" BackgroundColor="Transparent" BorderColor="Transparent" BorderWidth="0"
-                    Command="{Binding NavigateToAddCommand}" ImageSource="add.png" HeightRequest="35" WidthRequest="35"/>
-            <Button Grid.Column="2" BackgroundColor="Transparent" BorderColor="Transparent" BorderWidth="0"
-                    Command="{Binding NavigateToFavoritesCommand}" ImageSource="heart.png" HeightRequest="35" WidthRequest="35"/>
-        </Grid>
+        <Border Grid.Row="4" BackgroundColor="White" StrokeShape="RoundRectangle 40,40,0,0"
+                StrokeThickness="0" VerticalOptions="EndAndExpand" Padding="0,15,0,9">
+            <Border.Shadow>
+                <Shadow Brush="Black" Offset="0,-5" Radius="10" Opacity="0.2" />
+            </Border.Shadow>
+            <Grid ColumnDefinitions="*,*,*" HorizontalOptions="FillAndExpand">
+                <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" Spacing="2">
+                    <Image Source="home.png" HeightRequest="25" WidthRequest="25" HorizontalOptions="Center" VerticalOptions="Center" />
+                    <Label Text="Início" FontSize="10" TextColor="#226487" HorizontalOptions="Center" />
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavigateToHomeCommand}" />
+                    </VerticalStackLayout.GestureRecognizers>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Spacing="2">
+                    <Image Source="add.png" HeightRequest="25" WidthRequest="25" HorizontalOptions="Center" VerticalOptions="Center" />
+                    <Label Text="Adicionar" FontSize="10" TextColor="#226487" HorizontalOptions="Center" />
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavigateToAddCommand}" />
+                    </VerticalStackLayout.GestureRecognizers>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center" Spacing="2">
+                    <Image Source="heart.png" HeightRequest="25" WidthRequest="25" HorizontalOptions="Center" VerticalOptions="Center" />
+                    <Label Text="Favoritos" FontSize="10" TextColor="#226487" HorizontalOptions="Center" />
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavigateToFavoritesCommand}" />
+                    </VerticalStackLayout.GestureRecognizers>
+                </VerticalStackLayout>
+            </Grid>
+        </Border>
 
     </Grid>
 </ContentPage>
