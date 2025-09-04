@@ -8,6 +8,8 @@ namespace eComunidade.Models.Enum
 {
     public enum TipoOcorrencia
     {
-        
+        NaoSolucionada,
+        EmSolucao,
+        Solucionada
     }
 }

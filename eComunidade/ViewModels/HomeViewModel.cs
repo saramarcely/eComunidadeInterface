@@ -21,7 +21,7 @@ namespace eComunidade.ViewModels
             Shell.Current.FlyoutIsPresented = !Shell.Current.FlyoutIsPresented;
         }
 
-        // Comandos de navegação
+        // comandos de navegação
         [RelayCommand]
         private async Task NavigateToProfile()
         {
@@ -31,42 +31,42 @@ namespace eComunidade.ViewModels
         [RelayCommand]
         private async Task NavigateToEvents()
         {
-            // Alterado para navegação relativa
+          
             await Shell.Current.GoToAsync($"{nameof(TelaEventos)}");
         }
 
         [RelayCommand]
         private async Task NavigateToOccurrences()
         {
-            // Alterado para navegação relativa
+            
             await Shell.Current.GoToAsync($"{nameof(TelaOcorrencias)}");
         }
 
         [RelayCommand]
         private async Task NavigateToRanking()
         {
-            // Alterado para navegação relativa
+           
             await Shell.Current.GoToAsync($"{nameof(TelaRanking)}");
         }
 
         [RelayCommand]
         private async Task NavigateToHome()
         {
-            // Alterado para navegação relativa
+            
             await Shell.Current.GoToAsync($"{nameof(TelaHome)}");
         }
 
         [RelayCommand]
         private async Task NavigateToAdd()
         {
-            // Alterado para navegação relativa
+            
             await Shell.Current.GoToAsync($"{nameof(TelaAdicionar)}");
         }
 
         [RelayCommand]
         private async Task NavigateToFavorites()
         {
-            // Alterado para navegação relativa
+            
             await Shell.Current.GoToAsync($"{nameof(TelaFavoritos)}");
         }
     }

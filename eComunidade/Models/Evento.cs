@@ -19,6 +19,11 @@ namespace eComunidade.Models
         public TimeSpan? Duracao { get; set; } // melhor para para durações do que um datetime
         public int PontuacaoVoluntario { get; set; }
 
+        //calcular as vagas restantes
+        public int QtdeVagasRestantes => QtdeVagas - QtdeVoluntarios;
+
+        public string DataFormatada => Data.ToString("HH:mm");
+
         public Evento() { }
 
         public Evento(string titulo, string descricao, string local, DateTime data, int qtdeVagas)
