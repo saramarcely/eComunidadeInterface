@@ -20,7 +20,7 @@
 
         <Border BackgroundColor="White"
                 StrokeShape="RoundRectangle 20"
-                Margin="20, 150, 20, 20"
+                Margin="20, 110, 20, 20"
                 VerticalOptions="FillAndExpand">
 
             <VerticalStackLayout Spacing="15" Padding="30">

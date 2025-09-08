@@ -20,7 +20,6 @@ namespace eComunidade
             
             Routing.RegisterRoute(nameof(Views.TelaOcorrencias), typeof(Views.TelaOcorrencias));
             Routing.RegisterRoute(nameof(Views.TelaAdicionar), typeof(Views.TelaAdicionar));
-            Routing.RegisterRoute(nameof(Views.TelaFavoritos), typeof(Views.TelaFavoritos));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

@@ -78,9 +78,6 @@
 	  <MauiXaml Update="Views\TelaEventos.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\TelaFavoritos.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Views\TelaHome.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

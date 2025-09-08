@@ -62,12 +62,5 @@ namespace eComunidade.ViewModels
             
             await Shell.Current.GoToAsync($"{nameof(TelaAdicionar)}");
         }
-
-        [RelayCommand]
-        private async Task NavigateToFavorites()
-        {
-            
-            await Shell.Current.GoToAsync($"{nameof(TelaFavoritos)}");
-        }
     }
 }
